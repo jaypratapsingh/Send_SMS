@@ -1,0 +1,18 @@
+{
+    "version": "1.0.0",
+    "name": "com.jp.plugin.send_sms",
+    "cordova_name": "Send_SMS",
+    "description": "Send SMS to single and multiple number with one click",
+    "license": "Apache 2.0",
+    "keywords": [
+        "cordova",
+        "sms",
+        "sendmultiplesms",
+        "sendsinglesms",
+        "message"
+    ],
+    "platforms": [
+        "android"
+    ],
+    "engines": []
+}

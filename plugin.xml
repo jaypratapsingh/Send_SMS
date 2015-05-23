@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0" 
+xmlns:android="http://schemas.android.com/apk/res/android"
+    id="com.jp.plugin.send_sms"
+    version="1.0.0">
+    <name>Send_SMS</name>
+    <description>Send SMS to single and multiple number with one click</description>
+    <license>Apache 2.0</license>
+    <keywords>cordova,sms,sendmultiplesms,sendsinglesms,message</keywords>
+    <repo></repo>
+    <issue></issue>
+    <js-module src="www/send_sms.js" name="Send_SMS">
+        <clobbers target="send_sms" />
+    </js-module>
+    <!-- android -->
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="Send_SMS" >
+                <param name="android-package" value="com.jp.plugin.send_sms.Send_SMS"/>
+            </feature>
+        </config-file>
+        <source-file src="src/android/com/jp/plugin/send_sms/Send_SMS.java" target-dir="src/com/jp/plugin/send_sms" />
+    </platform>
+</plugin>
